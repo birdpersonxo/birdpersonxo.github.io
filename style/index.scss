@@ -1,0 +1,18 @@
+@import 'reset.scss';
+@import 'typeface.scss';
+
+/* Style the selection */
+::selection {
+  background-color: #ac1132; /* Set the background color for selected text */
+  color: #ffffff; /* Set the text color for selected text */
+}
+
+/* For Firefox compatibility */
+::-moz-selection {
+  background-color: #ac1132; /* Set the background color for selected text */
+  color: #ffffff; /* Set the text color for selected text */
+}
+
+@import 'components/header.scss';
+
+@import 'pages/home.scss';
