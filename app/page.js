@@ -20,6 +20,11 @@ const VideoBanner = () => {
       </video>
       <div className="video-content">
         <h1>SHOWREEL</h1>
+        <p>
+          Ripley nominated for 13 EMMY awards - including for Visual Effects in a Single Episode 
+          This is something no one cares about we have to watch in your own room.
+          This is something no one cares about we have to watch in your own room.
+        </p>
       </div>
     </div>
   );
