@@ -15,7 +15,7 @@ const Header = () => {
                 <div className="menu">
                     BLOGS
                 </div>
-                <div className="menu">
+                <div className="menu profile">
                     PROFILE
                 </div>
             </div>
