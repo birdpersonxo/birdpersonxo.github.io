@@ -51,11 +51,11 @@ const Banner = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Clean up the event listener
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -67,7 +67,7 @@ const Banner = () => {
         Your browser does not support the video tag.
       </video>
       <div className='text-overlay'>
-        <span className="text-item heading">Showreel '24</span>
+        <span className="text-item heading">Showreel 24</span>
         <span className="text-item side">
           <p>Visual Effects</p>
           <p>Development</p>
