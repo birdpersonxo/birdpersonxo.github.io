@@ -33,6 +33,7 @@ export default function Home() {
     <Banner/>
     <div className='content'>
       <div className='home-content'>
+        <HomeContent/>
       </div>
     </div>
     </>
@@ -67,7 +68,7 @@ const Banner = () => {
         Your browser does not support the video tag.
       </video>
       <div className='text-overlay'>
-        <span className="text-item heading">Showreel 24</span>
+        <span className="text-item heading">Showreel &apos;24</span>
         <span className="text-item side">
           <p>Visual Effects</p>
           <p>Development</p>
@@ -86,5 +87,73 @@ const Banner = () => {
       </div>
       {/* </Animator> */}
     </div>
+  )
+}
+
+const WorksData = [
+    {title:"ANIMATION SHORT", link:"anim-short", role:['Development', 'Design'], year: '2023', 
+      desc:"My first animation short that i'm currently working on.",
+      image:"images/adya.png",
+    },
+    {title:"dGROOM DEFORMER", link:"dgroom-deformer", role:['Development', 'Tools'], year: '2023', 
+      desc:"Custom houdini groom deformer built with opencl and render time procedural integration.",
+      image:"images/art.png",
+    },
+    {title:"STORYBOARD | ANIMATICS", link:"story-board", role:['Art', 'Viz Dev'], year: '2023', 
+      desc:"Custom houdini groom deformer built with opencl and render time procedural integration.",
+      image:"images/adya_paint.png",
+    },
+    {title:"NYX", link:"nyx", role:['Development', 'Tools'], year: '2023', 
+      desc:"Nyx is a pipeline tool to maintain visual effect assets and native USD support to create scene assembly file.",
+      image:"images/yazhi.png",
+    },
+    {title:"YAZHI", link:"yazhi", role:['Development', 'Tools'], year: '2023', 
+      desc:"Nyx is a pipeline tool to maintain visual effect assets and native USD support to create scene assembly file.",
+      image:"images/piolet.png",
+    },
+  ]
+
+
+const HomeContent = () => {
+  return (
+    <>
+    {WorksData.map((work, index)=>(
+      <WorkItem 
+      title={work.title}
+      image={work.image}
+      role={work.role}
+      desc={work.desc}
+      />
+    ))}
+    </>
+  )
+}
+
+const WorkItem = ({title, image, role, desc}) => {
+  return (
+    <>
+    <div className='work-item-wrapper'>
+        <div className='text'>
+          <div className='heading'>
+            {title}
+          </div>
+          {/* <div className='view-project'>
+            view project
+          </div> */}
+        <div className='desc'>
+          {desc}
+        </div>
+          <div className='sub-heading'>
+            <p>Short Film</p>
+            <p>Direction</p>
+            <p>Art</p>
+          </div>
+        </div>
+        <img className='image' src={image}/>
+        {/* <div className='desc'>
+          {desc}
+        </div> */}
+    </div>
+    </>
   )
 }
