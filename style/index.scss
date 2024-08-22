@@ -17,3 +17,11 @@
 @import 'components/header.scss';
 
 @import 'pages/home.scss';
+
+.content{
+  // margin: 20px;
+  width:100%;
+  position: relative;
+  z-index: 2;
+  padding: 20px 20px 20px 20px;
+}

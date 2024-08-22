@@ -1,100 +1,67 @@
-.content{
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
+.banner-wrapper{
+    position: fixed;
+    width:100%;
+    padding:20px;
+    padding-top:55px;
+    z-index: 1;
 
-        .video{
-            position: absolute;
-            top:50%;
-            left:50%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transform: translate(-50%, -50%);
-            z-index: 1;
+    .video{
+        width:100%;
+        height: 90vh;
+        object-fit: cover;
+        // opacity: 0; // Initially hidden
+    // transition: opacity 1s ease-out;
+    }
+
+    .text-overlay{
+        position: absolute;
+        padding:20px;
+        top: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; // Adjust width based on your preference
+        color: white; // Text color
+        font-size: 2rem; // Adjust font size
+        font-weight: bold;
+        mix-blend-mode:exclusion;
+        letter-spacing: -1.8px;
+        // text-transform: uppercase;
+        // font-family: $font-plex;
+
+            .heading{
+                font-size: 61px;
+            }
+
+            .side{
+                display: flex;
+                font-size: 18px;
+
+                p{
+                    padding-left:28px;
+                    padding-right:2px;
+                }
+            }
+    }
+
+    .scroll{
+        width:100%;
+        padding-top: 6px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+
+        .time-zone{
+            // font-family: $font-plex;
+            font-size: 14px;
         }
+    }
 
-        .content-left, .content-right{
-            position: absolute;
-            bottom:60px;
-            z-index: 2;
-        }
+}
 
-        .content-left{
-            left:80px;
-        }
-
-        .content-right{
-            right: 80px;
-        }
-
-        h1{
-            font-size:90px;
-            font-weight: 500;
-            width:45%;
-            text-shadow: -2.8px 0px 0px #ED2829 ,2.8px 0px 0px #1E1EFF;
-            font-family: $font-plex;
-        }
-        
-        p{
-            font-family: $font-plex;
-            text-transform: uppercase;
-            font-size: 15px;
-        }
-
- }
-// .video-banner-wrapper{
-//         position: absolute;
-//         top:0;
-//         width: 100%;
-//         height: 100%;
-//         z-index: 1;
-//     .video-banner{
-//         width:100%;
-//         height: 100%;
-//         object-fit: cover;
-
-//     }
-//     .video-content{
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         z-index: 2;
-//         color: white;
-//         align-items: center;
-//         display: flex;
-//         justify-content: center;
-//         flex-direction: column;
-//         transform: translate(-50%, 0);
-//         width:100%;
-//         h1{
-//             font-size: 80px;
-//             letter-spacing: 12px;
-//             font-family: $font-plex;
-//             font-weight: 600;
-//             text-shadow: -2.8px 0px 0px #ED2829 ,2.8px 0px 0px #1E1EFF;
-//         }
-
-//         p{
-//             padding-top:10px;
-//             width:490px;
-//             font-family: $font-plex;
-//             text-transform: uppercase;
-//             font-size:14px;
-//             font-weight: 600;
-//             line-height: 15px;
-//         }
-
-//         .scroll-down-btn{
-//             position: absolute;
-//             z-index: 18;
-//         }
-//     }
-    
-// }
-
-// .bottom-wrapper{
-//     position: absolute;
-//     z-index: 12;
-// }
+.home-content{
+    margin-top: 100vh;
+    background-color: $background-color;
+}

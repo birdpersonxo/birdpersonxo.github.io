@@ -1,37 +1,44 @@
 .header-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    position: absolute;
-    top:0;
-    font-family: $font-plex;
-    font-weight: 400;
+    z-index: 1000;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding:50px 80px;
-    z-index: 10;
-    font-size: 17px;
+    font-family: $font-plex;
 
     .logo{
-        display: block;
-        padding:2px;
-        font-weight: 500;
+        font-size:26px;
+        letter-spacing: -3px;
+        b{
+            font-weight: 600;
+        }
     }
 
     .menu-wrapper{
         display: flex;
+        align-items: center;
+        font-family: $font-inter;
 
         .menu{
-            margin-left: 50px;
-            padding:5px 10px;
+            font-size: 14px;
+            // letter-spacing: 1px;
+            // background-color: #333333;
+            // background-color: white;
+            // color:black;
+            font-weight: 500;
+            font-family: $font-plex;
+            padding:4px 15px;
+
+            margin: 1px;
         }
 
         .profile{
-            background-color: #fff;
+            background-color: white;
             color:$background-color;
-            border-radius: 10px;
+            border-radius: 2px;
         }
     }
-
-    
-    
 }
