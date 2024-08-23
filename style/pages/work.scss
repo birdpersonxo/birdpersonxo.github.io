@@ -1,10 +1,28 @@
 .work-item-wrapper{
-        margin-top:100px;
+        margin-top:40px;
         display: flex;
         width:100%;
         aspect-ratio: 3 / 1; 
         align-items: center;
         font-family: $font-plex;
+        transition: all 1.2s ease-in;
+
+        &:hover{
+            cursor: pointer;
+
+            .heading{
+                background-color: white;
+                color:$background-color;
+            }
+
+            .text{
+
+                .desc{
+                    color:$gray-500;
+                }
+            }
+
+        }
         .text{
             width:400px;
             display: flex;
@@ -20,6 +38,7 @@
 
             .heading{
                 font-size: 40px;
+                transition: all 0.2s ease-in;
             }
             .desc{
                 width: 200px;
@@ -27,6 +46,8 @@
                 text-transform: uppercase;
                 font-size: 12px;
                 font-weight: 100;
+                color:$gray-600;
+                transition: all 0.3s ease-in;
             }
         }
         .desc{
@@ -43,5 +64,147 @@
             width: 100%;
             height: 100%;;
         }
+
+}
+
+.home-content-mid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left{
+        font-size: 70px;
+        font-family: $font-plex;
+        text-shadow: -2px 0px 0px #FF0000,    2px 0px 0px #1E8AFF;
+        font-weight: 700;
+    }
+    .mid{
+        font-size: 13px;
+        line-height: 16px;
+        font-family: $font-plex;
+        font-weight: 400;
+        text-transform: uppercase;
+        width:200px;
+        color:$gray-500;
+    }
+
+    .right{
+            font-size:13px;
+            text-transform: uppercase;
+            font-family: $font-plex;
+            display: flex;
+            flex-direction: column;
+        p{
+            color:$gray-700;
+        }
+        a{
+            text-transform: uppercase;
+            padding-top:3px;
+        }
+    }
+}
+.home-content-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:80px;
+    padding-bottom: 40px;
+    .left{
+        font-size: 70px;
+        font-family: $font-plex;
+        text-shadow: -2px 0px 0px #FF0000,    2px 0px 0px #1E8AFF;
+        font-weight: 700;
+    }
+    .mid{
+        font-size: 13px;
+        line-height: 16px;
+        font-family: $font-plex;
+        font-weight: 400;
+        text-transform: uppercase;
+        width:200px;
+        color:$gray-500;
+    }
+
+    .right{
+            font-size:13px;
+            text-transform: uppercase;
+            font-family: $font-plex;
+            display: flex;
+            flex-direction: column;
+        p{
+            color:$gray-700;
+        }
+        a{
+            text-transform: uppercase;
+            padding-top:3px;
+        }
+    }
+}
+
+
+.flimographyTable{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: $font-plex;
+    letter-spacing: 1px;
+    width:800px;
+    // display: flex;
+
+    .content-item{
+        padding-bottom: 20px;
+    }
+
+    .movie-item{
+                display: flex;
+                // grid-template-columns: 1fr 1fr;
+                justify-content: space-between;
+                // min-width: 800px;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+                padding-bottom:20px;
+                padding-top:20px;
+                border-top: 1px solid rgb(41, 41, 41);
+                // transform: translate(50%, 50%);
+                font-family: $font-ptmono;
+                .movie-name{
+                    font-family: $font-ptmono;
+                }
+
+                p{
+                    padding-top:10px;
+                }
+
+                .gray{
+                    color:$gray-600;
+                }
+                transition: all ease-in 1.2ms;
+
+                &:hover{
+
+                        color:$background-color;
+                        background-color: white;
+                    .movie-name{
+
+                    }
+                    // background-color: $text-color;
+                }
+            }
+}
+
+
+.flim-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: none;
+    height:100%;
+    width:100%;
+
+    .poster{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
 
 }

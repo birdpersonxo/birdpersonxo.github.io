@@ -4,41 +4,58 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0; /* Remove margins to prevent overflow */
     font-family: $font-plex;
 
-    .logo{
-        font-size:26px;
-        letter-spacing: -3px;
-        b{
-            font-weight: 600;
-        }
+    a{
+        text-decoration: none;
+        color:inherit;
     }
 
-    .menu-wrapper{
+    .header{
         display: flex;
-        align-items: center;
-        font-family: $font-inter;
+        justify-content: space-between;
+        padding: 15px 20px; /* Moved margin to padding to keep inner spacing */
+        color:$text-color;
 
-        .menu{
-            font-size: 14px;
-            // letter-spacing: 1px;
-            // background-color: #333333;
-            // background-color: white;
-            // color:black;
-            font-weight: 500;
+
+        .logo{
+            font-size: 26px;
+            letter-spacing: -3px;
+
+            b{
+                font-weight: 600;
+            }
+        }
+
+        .menu-wrapper{
+            display: flex;
+            align-items: center;
             font-family: $font-plex;
-            padding:4px 15px;
+            letter-spacing: 1px;
 
-            margin: 1px;
         }
 
-        .profile{
-            background-color: white;
-            color:$background-color;
-            border-radius: 2px;
+            .menu{
+                font-size: 14px;
+                font-weight: 500;
+                margin: 4px 0px;
+                margin-left: 26px;
+                // margin: 1px;
+                &:hover{
+
+                    @include chroma-link;
+                    text-decoration: none;
+                    text-shadow:-0.5px 0px 0px #1AD7E0, -1px 0px 0px #0D10DC,0.5px 0px 0px #d68010 ,1px 0px 0px #CB0C0C;
+                }
+            }
+
+            .profile{
+                background-color: white;
+                color: $background-color;
+                border-radius: 2px;
+                padding: 4px 15px;
+            }
         }
-    }
 }

@@ -1,0 +1,32 @@
+
+@mixin chroma-link{
+        color:$text-color;
+        transition: all 0.2s ease-in;
+        position: relative;
+
+        &:hover{
+        // animation:chroma ease-in 0.2s normal forwards;
+        // text-shadow: -2px 0px 0px #FF0000,    2px 0px 0px #1E8AFF;
+        animation:chroma ease-in 0.2s normal forwards;
+        font-weight: 400;
+         width: 100%;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            left: 0;
+            bottom: 0;
+            width: 0%;
+            background: $text-color;
+            transition: all 0.1s ease-in;
+        }
+
+        &:hover::after{
+            width:100%;
+            text-shadow: -2px 0px 0px #FF0000,    2px 0px 0px #1E8AFF;
+        }
+
+
+}

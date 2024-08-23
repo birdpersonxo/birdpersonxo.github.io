@@ -1,9 +1,13 @@
 "use client"; // Add this line at the top
 import '../style/index.scss';
 import { GoArrowDown } from "react-icons/go";
+import { GoArrowUpRight } from "react-icons/go";
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import Lenis from '@studio-freight/lenis';
 import { useEffect , useState} from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 // import { ScrollContainer, Animator, batch, FadeIn , Sticky, FadeOut} from 'react-scroll-motion';
 
 export default function Home() {
@@ -34,6 +38,13 @@ export default function Home() {
     <div className='content'>
       <div className='home-content'>
         <HomeContent/>
+    <div className='home-content-heading'>
+      <div className='left'>
+        FLIMOGRAPHY
+      </div>
+    </div>
+    <FlimographyTable/>
+    <Footer/>
       </div>
     </div>
     </>
@@ -46,7 +57,7 @@ const Banner = () => {
    const handleScroll = () => {
     // Adjust the divisor to control the scroll distance to opacity mapping
     const scrollTop = window.scrollY;
-    const maxScroll = 600; // Maximum scroll distance at which opacity becomes 0
+    const maxScroll = 800; // Maximum scroll distance at which opacity becomes 0
     const newOpacity = Math.max(1 - scrollTop / maxScroll, 0);
     setOpacity(newOpacity);
   };
@@ -111,28 +122,64 @@ const WorksData = [
       desc:"Nyx is a pipeline tool to maintain visual effect assets and native USD support to create scene assembly file.",
       image:"images/piolet.png",
     },
+]
+
+const FlimographyData = [
+    {name: "Sonic 3",studio:"paramount",  year: '2024', role: "RSP - ADELAIDE | Creature TD", link:""},
+    {name: "The Knuckles", studio:"Paramount", year: '2024', role: "RSP - ADELAIDE | Creature TD", link:""},
+    {name: "Monarch: Legacy of Monsters", studio:"Paramount",year: '2023', role: "RSP - ADELAIDE | Creature TD", link:""},
+    {name: "The Marvels", studio:"Paramount",year: '2023', role: "RSP - ADELAIDE | Creature TD", link:""},
+    {name: "antman and the wasp quantumania", studio:"Paramount",year: '2022', role: "RSP - ADELAIDE | Creature TD", link:""},
+    {name: "Harold and the Purple Crayon", studio:"Paramount",year: '2022', role: "RSP - ADELAIDE | Creature TD", link:""},
+    {name: "The Flash", studio:"Paramount", year: '2022', role: "DNEG - BANGALORE | Creature TD", link:""},
+    {name: "Cumpa", studio:"Paramount", year: '2021', role: "MPC - BANGALORE | Creature TD", link:""},
+    {name: "La Brea", studio:"Paramount", year: '2021', role: "MPC - BANGALORE | Creature EFECTS", link:""},
   ]
+
 
 
 const HomeContent = () => {
   return (
     <>
-    {WorksData.map((work, index)=>(
-      <WorkItem 
-      title={work.title}
-      image={work.image}
-      role={work.role}
-      desc={work.desc}
-      />
-    ))}
+    <div className='home-content-mid'>
+      <div className='left'>
+        WORKS
+      </div>
+      <div className='mid'>
+        The following are the works from some of my personal projects
+      </div>
+      <div className='right'>
+        <p>SOCIALS</p>
+        <Link href="#">Instagram</Link>
+        <Link href="#">YOUTUBE</Link>
+        <Link href="#"></Link>
+      </div>
+    </div>
+      {WorksData.map((work, index)=>(
+        <WorkItem 
+        link={work.link}
+        title={work.title}
+        image={work.image}
+        role={work.role}
+        desc={work.desc}
+        key={index}
+        />
+      ))}
     </>
   )
 }
 
-const WorkItem = ({title, image, role, desc}) => {
+const WorkItem = ({link, title, image, role, desc}) => {
   return (
     <>
-    <div className='work-item-wrapper'>
+    <motion.div
+      className="work-item"
+      initial={{ opacity: 0, y: 80 }} // Start hidden and slightly below
+      whileInView={{ opacity: 1, y: 0 }} // Animate to visible and in place
+      transition={{ duration: 0.6, ease: "easeOut" }} // Smooth transition
+      viewport={{ once: true, amount: 0.1 }} // Trigger when 30% of the item is in view
+    >
+    <Link href={link} className='work-item-wrapper'>
         <div className='text'>
           <div className='heading'>
             {title}
@@ -153,7 +200,43 @@ const WorkItem = ({title, image, role, desc}) => {
         {/* <div className='desc'>
           {desc}
         </div> */}
-    </div>
+    </Link>
+    </motion.div>
     </>
   )
 }
+
+
+const FlimographyTable = ()=> {
+  return (
+    <div className='flim-wrapper'>
+      {/* <img className='poster' src="/images/adya.png"/> */}
+      <div className='flimographyTable'>
+        <div className='content-item'>
+          SHOWS
+        </div>
+      {FlimographyData.map((item, index) => (
+        <Film key={index} name={item.name} studio={item.studio} role={item.role} year={item.year} link={item.link}/>
+      ))}
+      </div>
+    </div>
+  )
+}
+
+  const Film = ({name, role, year, link, studio}) => {
+    return( 
+    <>
+    <div className='movie-item'>
+      <div className='movie-name'>
+       <p> {name} <GoArrowUpRight /></p>
+       <p className='gray'> {studio}</p>
+      </div>
+      <div className='movie-name'>
+       <p>{role}</p> 
+       <p className='gray'>{year}</p> 
+      </div>
+    </div>
+    </>
+    )
+  }
+  

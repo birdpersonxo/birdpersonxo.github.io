@@ -1,6 +1,7 @@
 @import 'reset.scss';
 @import 'typeface.scss';
 @import 'colors.scss';
+@import 'mixin.scss';
 
 /* Style the selection */
 ::selection {
@@ -15,14 +16,47 @@
 }
 
 @import 'components/header.scss';
+@import 'components/footer.scss';
+@import 'components/work-component.scss';
 
 @import 'pages/home.scss';
 @import 'pages/work.scss';
 
+body{
+  background-color: $background-color;
+}
+
 .content{
   // margin: 20px;
-  width:100%;
   position: relative;
   z-index: 2;
   padding: 20px 20px 20px 20px;
+  color:$text-color;
+  font-family: $font-plex;
 }
+
+.content-main{
+  padding:0px;
+  margin:0px;
+}
+
+.content-item{
+  padding-top:45px;
+}
+
+.art-background{
+  background-color: white;
+}
+
+.art-header{
+  color:$background-color !important;
+}
+
+.art-menu{
+  color:inherit !important;
+}
+
+ .art-profile{
+                background-color: $background-color !important;
+                color: $text-color !important;
+  }
