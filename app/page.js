@@ -43,7 +43,7 @@ export default function Home() {
         FLIMOGRAPHY
       </div>
     </div>
-    <FlimographyTable/>
+    <Flimography/>
     <Footer/>
       </div>
     </div>
@@ -124,17 +124,6 @@ const WorksData = [
     },
 ]
 
-const FlimographyData = [
-    {name: "Sonic 3",studio:"paramount",  year: '2024', role: "RSP - ADELAIDE | Creature TD", link:""},
-    {name: "The Knuckles", studio:"Paramount", year: '2024', role: "RSP - ADELAIDE | Creature TD", link:""},
-    {name: "Monarch: Legacy of Monsters", studio:"Paramount",year: '2023', role: "RSP - ADELAIDE | Creature TD", link:""},
-    {name: "The Marvels", studio:"Paramount",year: '2023', role: "RSP - ADELAIDE | Creature TD", link:""},
-    {name: "antman and the wasp quantumania", studio:"Paramount",year: '2022', role: "RSP - ADELAIDE | Creature TD", link:""},
-    {name: "Harold and the Purple Crayon", studio:"Paramount",year: '2022', role: "RSP - ADELAIDE | Creature TD", link:""},
-    {name: "The Flash", studio:"Paramount", year: '2022', role: "DNEG - BANGALORE | Creature TD", link:""},
-    {name: "Cumpa", studio:"Paramount", year: '2021', role: "MPC - BANGALORE | Creature TD", link:""},
-    {name: "La Brea", studio:"Paramount", year: '2021', role: "MPC - BANGALORE | Creature EFECTS", link:""},
-  ]
 
 
 
@@ -223,20 +212,60 @@ const FlimographyTable = ()=> {
   )
 }
 
-  const Film = ({name, role, year, link, studio}) => {
-    return( 
-    <>
-    <div className='movie-item'>
-      <div className='movie-name'>
-       <p> {name} <GoArrowUpRight /></p>
-       <p className='gray'> {studio}</p>
-      </div>
-      <div className='movie-name'>
-       <p>{role}</p> 
-       <p className='gray'>{year}</p> 
+const FilmData = [
+    {name: "Sonic 3",studio:"paramount",  year: '2024', studio: "RSP - ADELAIDE", role:"Creature TD", 
+      link:"", image:"/images/film/sonic3.png"},
+    {name: "The Knuckles", studio:"Paramount", year: '2024', studio: "RSP - ADELAIDE", role:"Creature TD", 
+      link:"", image:"/images/film/knuckles.png"},
+    {name: "Monarch: Legacy of Monsters", studio:"Paramount",year: '2023', studio: "RSP - ADELAIDE", role:"Creature TD",
+       link:"", image:"/images/film/monsters.png"},
+    {name: "The Marvels", studio:"Paramount",year: '2023', studio: "RSP - ADELAIDE" , role: "Creature TD", 
+      link:"" , image:"/images/film/marvels.png"},
+    {name: "antman and the wasp quantumania", studio:"Paramount",year: '2022', studio: "RSP - ADELAIDE" , role:"Creature TD", 
+      link:"", image:"/images/film/antman.png"},
+    {name: "Harold and the Purple Crayon", studio:"Paramount",year: '2022', studio: "RSP - ADELAIDE", role:"Creature TD", 
+      link:"", image:"/images/film/harold.png"},
+    {name: "The Flash", studio:"Paramount", year: '2022', studio: "DNEG - BANGALORE", role:"Creature TD", 
+      link:"", image:"/images/film/flash.png"},
+    {name: "Cumpa", studio:"Paramount", year: '2021', studio: "MPC - BANGALORE", role:"Creature TD", 
+      link:"", image:"/images/film/chupa.png"},
+    {name: "La Brea", studio:"Paramount", year: '2021', studio: "MPC - BANGALORE", role:"Creature EFECTS", 
+      link:"", image:"/images/film/labrea.png"},
+  ]
+
+const Flimography = () => {
+  return (
+    <div className='flimography-wrapper'>
+      <div className='flimography-grid'>
+        {FilmData.map((item, index) => (
+          <Film key={index} 
+          name={item.name}
+          image={item.image}
+          role={item.role}
+          studio={item.studio}
+          />
+        ))}
       </div>
     </div>
-    </>
+  )
+}
+
+  const Film = ({name, image, role, studio}) => {
+    return( 
+    <div className='movie-item'>
+      <img src={image} className='image'/>
+      <div className='content'>
+        <div className='title'>
+          {name}
+        </div>
+        <div className='role'>
+          {role}
+        </div>
+        <div className='role'>
+          {studio}
+        </div>
+      </div>
+    </div>
     )
   }
   

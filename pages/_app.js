@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }) {
             document.body.classList.add('art-background');
             if(header){
               header.classList.add('art-header');
-              // header.className = 'art-header';
               menu_wrapper.classList.add('art-menu');
               profile.classList.add('art-profile');
             }
@@ -25,6 +24,7 @@ function MyApp({ Component, pageProps }) {
             document.body.classList.remove('art-background');
             if(header){
               header.classList.remove('art-header');
+              profile.classList.remove('art-profile');
             }
         }
     }, [router.pathname]);

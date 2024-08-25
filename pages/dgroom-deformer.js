@@ -1,4 +1,3 @@
-import '../style/index.scss';
 const DGroomDeformer = () => {
     return(
         <div className='content-item'>

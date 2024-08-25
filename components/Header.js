@@ -9,7 +9,7 @@ const Header = () => {
                     <b>DEEPAK</b> RAJAN ~ 2024
                 </Link>
                 <div className="menu-wrapper">
-                    <Link href="works" className="menu">
+                    <Link href="/" className="menu">
                         WORKS
                     </Link>
                     <Link href="art" className="menu">

@@ -141,70 +141,133 @@
 }
 
 
-.flimographyTable{
-    text-transform: uppercase;
-    font-size: 12px;
-    font-family: $font-plex;
-    letter-spacing: 1px;
-    width:800px;
-    // display: flex;
+// .flimographyTable{
+//     text-transform: uppercase;
+//     font-size: 12px;
+//     font-family: $font-plex;
+//     letter-spacing: 1px;
+//     width:800px;
+//     // display: flex;
 
-    .content-item{
-        padding-bottom: 20px;
-    }
+//     .content-item{
+//         padding-bottom: 20px;
+//     }
 
-    .movie-item{
-                display: flex;
-                // grid-template-columns: 1fr 1fr;
-                justify-content: space-between;
-                // min-width: 800px;
-                font-size: 12px;
-                line-height: 14px;
-                text-transform: uppercase;
-                padding-bottom:20px;
-                padding-top:20px;
-                border-top: 1px solid rgb(41, 41, 41);
-                // transform: translate(50%, 50%);
-                font-family: $font-ptmono;
-                .movie-name{
-                    font-family: $font-ptmono;
+//     .movie-item{
+//                 display: flex;
+//                 // grid-template-columns: 1fr 1fr;
+//                 justify-content: space-between;
+//                 // min-width: 800px;
+//                 font-size: 12px;
+//                 line-height: 14px;
+//                 text-transform: uppercase;
+//                 padding-bottom:20px;
+//                 padding-top:20px;
+//                 border-top: 1px solid rgb(41, 41, 41);
+//                 // transform: translate(50%, 50%);
+//                 font-family: $font-ptmono;
+//                 .movie-name{
+//                     font-family: $font-ptmono;
+//                 }
+
+//                 p{
+//                     padding-top:10px;
+//                 }
+
+//                 .gray{
+//                     color:$gray-600;
+//                 }
+//                 transition: all ease-in 1.2ms;
+
+//                 &:hover{
+
+//                         color:$background-color;
+//                         background-color: white;
+//                     .movie-name{
+
+//                     }
+//                     // background-color: $text-color;
+//                 }
+//             }
+// }
+
+
+// .flim-wrapper{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     aspect-ratio: none;
+//     height:100%;
+//     width:100%;
+
+//     .poster{
+//         width:100%;
+//         height:100%;
+//         object-fit: cover;
+//         overflow: hidden;
+//     }
+
+// }
+
+
+.flimography-wrapper{
+    padding: 0px 400px;
+    .flimography-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        .movie-item{
+            position: relative;
+            padding-bottom: 150%;
+            width:100%;
+            height:40%;
+            overflow: hidden;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $text-color;
+                .image{
+                    opacity: 0;
                 }
 
-                p{
-                    padding-top:10px;
-                }
+                .content{
+                    color:$background-color;
+                    // mix-blend-mode:exclusion;
 
-                .gray{
-                    color:$gray-600;
-                }
-                transition: all ease-in 1.2ms;
-
-                &:hover{
-
-                        color:$background-color;
-                        background-color: white;
-                    .movie-name{
-
+                    .role{
+                        opacity: 100;
                     }
-                    // background-color: $text-color;
+                }
+
+            }
+
+            .image{
+                position: absolute;
+                top:0;
+                left:0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                object-fit: cover;
+            }
+
+            .content{
+                position: absolute;
+                transform: translate(-50%, -50%);
+                top:50%;
+                left:50%;
+
+                .title{
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+
+                .role{
+                    padding-top:40px;
+                    opacity: 0;
+                    text-transform: uppercase;
                 }
             }
-}
-
-
-.flim-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: none;
-    height:100%;
-    width:100%;
-
-    .poster{
-        width:100%;
-        height:100%;
-        object-fit: cover;
-        overflow: hidden;
+        }
     }
-
 }
