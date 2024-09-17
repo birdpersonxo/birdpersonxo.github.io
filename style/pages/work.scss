@@ -1,8 +1,8 @@
 .work-item-wrapper{
-        margin-top:40px;
+        margin:150px 0px;
         display: flex;
         width:100%;
-        aspect-ratio: 3 / 1; 
+        aspect-ratio: 3 / 1.5; 
         align-items: center;
         font-family: $font-plex;
         transition: all 1.2s ease-in;
@@ -20,6 +20,7 @@
                 .desc{
                     color:$gray-500;
                 }
+
             }
 
         }
@@ -45,9 +46,20 @@
                 margin-left: auto; 
                 text-transform: uppercase;
                 font-size: 12px;
+                line-height: 16px;
                 font-weight: 100;
-                color:$gray-600;
+                color:$gray-500;
                 transition: all 0.3s ease-in;
+            }
+            .sub-heading{
+                width: 200px;
+                margin-left: auto; 
+                text-transform: uppercase;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 100;
+                transition: all 0.3s ease-in;
+                color:$gray-500;
             }
         }
         .desc{
@@ -71,6 +83,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top:150px;
     .left{
         font-size: 70px;
         font-family: $font-plex;

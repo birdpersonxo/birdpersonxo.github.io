@@ -1,4 +1,5 @@
 "use client"; // Add this line at the top
+const punycode = require('punycode/');
 import '../style/index.scss';
 import { GoArrowDown } from "react-icons/go";
 import { GoArrowUpRight } from "react-icons/go";
@@ -176,14 +177,14 @@ const WorkItem = ({link, title, image, role, desc}) => {
           {/* <div className='view-project'>
             view project
           </div> */}
-        <div className='desc'>
-          {desc}
-        </div>
-          <div className='sub-heading'>
-            <p>Short Film</p>
-            <p>Direction</p>
-            <p>Art</p>
+          <div className='desc'>
+            {desc}
           </div>
+            <div className='sub-heading'>
+              <p>Short Film</p>
+              <p>Direction</p>
+              <p>Art</p>
+            </div>
         </div>
         <img className='image' src={image}/>
         {/* <div className='desc'>
@@ -227,7 +228,7 @@ const FilmData = [
       link:"", image:"/images/film/harold.png"},
     {name: "The Flash", studio:"Paramount", year: '2022', studio: "DNEG - BANGALORE", role:"Creature TD", 
       link:"", image:"/images/film/flash.png"},
-    {name: "Cumpa", studio:"Paramount", year: '2021', studio: "MPC - BANGALORE", role:"Creature TD", 
+    {name: "Chupa", studio:"Paramount", year: '2021', studio: "MPC - BANGALORE", role:"Creature TD", 
       link:"", image:"/images/film/chupa.png"},
     {name: "La Brea", studio:"Paramount", year: '2021', studio: "MPC - BANGALORE", role:"Creature EFECTS", 
       link:"", image:"/images/film/labrea.png"},
