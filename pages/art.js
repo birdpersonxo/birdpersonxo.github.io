@@ -1,38 +1,81 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ImageData from '../data/art_data';
+import Head from 'next/head';
 
 const ArtPage = () => {
+    const [isFullScreen, setIsFullScreen] = useState(false);
+    const [selectedImage, setSelectedImage] = useState(null);
+
+    const handleImageClick = (image) => {
+        console.log(image);
+        setSelectedImage(image);
+        setIsFullScreen(true);
+    };
+
     useEffect(() => {
         // ImageRowCalculate(ImageData);
     }, []);
     return(
+        <>
+        <Head>
+            <title>Deepak Rajan — Art</title>
+        </Head>
         <div className="content-item">
             <div className="art-grid">
-                {/* <ImageRow/>
-                <ImageRow2/> */}
                 {ImageData.map((list, index)=>(
                     <div className="image-row" key={index}>
                         {list.map((item, itemIndex)=>(
-                            <div key={itemIndex} className="image-wrapper"
-                            style={{
-                                aspectRatio: item.aspect_ratio,
-                                flexGrow: item.aspect_ratio,
-                                // height:300,
-                            }}
-                            >
-                                <img src={item.img} className="img-display"/>
-                                <div className="title">{item.name}</div>
-                            </div>
+                            <Image key={itemIndex} url={item.img} 
+                                aspect_ratio={item.aspect_ratio}
+                                name={item.name}
+                            />
                         ))}
                     </div>
                 ))}
             </div>
         </div>
+        </>
     )
 }
 
 export default ArtPage;
 
+
+const Image = ({url, aspect_ratio, name}) => {
+    const [isFullScreen, setIsFullScreen] = useState(false);
+
+    const div_style = {
+        aspectRatio: aspect_ratio,
+        flexGrow: aspect_ratio
+    }
+
+    const handleImageClick = () => {
+        console.log('clicked');
+        setIsFullScreen(true);
+    };
+
+    const handleClose = () => {
+        setIsFullScreen(false);
+    }
+    return (
+        <>
+            <div className="image-wrapper" style={div_style} onClick={handleImageClick}>
+                <img src={url} className="img-display"/>
+                <div className="title">{name}</div>
+            </div>
+
+            {/* full screen mode */}
+            {isFullScreen && (
+                <div className="fullscreen-overlay" onClick={handleClose}>
+                    <div className="fullscreen-image-wrapper">
+                        <img src={url} className="fullscreen-img-display" alt={name}/>
+                        <div className="fullscreen-title">{name}</div>
+                    </div>
+                </div>
+            )}
+        </>
+    )
+}
 
 const ImageRowCalculate = (ImageData) => {
     const total_length = ImageData.length;
@@ -46,16 +89,4 @@ const ImageRowCalculate = (ImageData) => {
         // i = i+1;
     }
     console.log(total_length);
-}
-
-const Image = ({url, aspect_ratio, name}) => {
-    const div_style = {
-        aspectRatio: aspect_ratio,
-        flexGrow: aspect_ratio
-    }
-    return (
-        <div className="image-wrapper" style={div_style}>
-            {name}
-        </div>
-    )
 }

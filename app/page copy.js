@@ -12,29 +12,6 @@ import Link from 'next/link';
 import Head from 'next/head';
 // import { ScrollContainer, Animator, batch, FadeIn , Sticky, FadeOut} from 'react-scroll-motion';
 
-const Clock = () => {
-  const [time, setTime] = useState(new Date());
-
-  useEffect(() => {
-    // Set an interval to update the time every minute
-    const timerId = setInterval(() => setTime(new Date()), 60000);
-
-    // Clear the interval when the component is unmounted
-    return () => clearInterval(timerId);
-  }, []);
-
-  // Format the time for Adelaide (Australia/Adelaide timezone) - Only hours and minutes
-  const formattedTime = time.toLocaleTimeString('en-AU', {
-    timeZone: 'Australia/Adelaide',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false, // For 12-hour format, remove or set to false for 24-hour format
-  });
-
-  return <div>AUS : {formattedTime}</div>;
-};
-
-
 export default function Home() {
   useEffect(() => {
     const lenis = new Lenis({
@@ -62,7 +39,7 @@ export default function Home() {
       <title>birdperson</title>
     </Head>
     <Header/>
-    <Link href="/showreel">
+    <Link href="/footer">
       <Banner/>
     </Link>
     <Content/>
@@ -73,12 +50,20 @@ export default function Home() {
 
 const Banner = () => {
   const [opacity, setOpacity] = useState(1);
+  const [isClickable, setIsClickable] = useState(true);
+
    const handleScroll = () => {
     // Adjust the divisor to control the scroll distance to opacity mapping
     const scrollTop = window.scrollY;
     const maxScroll = 800; // Maximum scroll distance at which opacity becomes 0
     const newOpacity = Math.max(1 - scrollTop / maxScroll, 0);
     setOpacity(newOpacity);
+
+    if(newOpacity < 0.5){
+      setIsClickable(false);
+    }else{
+      setIsClickable(true);
+    }
   };
 
   useEffect(() => {
@@ -91,7 +76,7 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className='banner-wrapper' style={{opacity}}>
+    <div className='banner-wrapper' style={{opacity, pointerEvents: isClickable ? 'auto' : 'none'}}>
       {/* <Animator animation={batch(Sticky(), FadeOut())}> */}
         <video className='video' autoPlay loop muted>
           <source src="/videos/bannerVideo.mp4" type="video/mp4" />
@@ -107,7 +92,7 @@ const Banner = () => {
         </div>
       <div className='scroll'>
         <div className="time-zone">
-            <Clock/>
+            AUS : 234: 3435
         </div>
         <div>
           Scroll
@@ -121,7 +106,6 @@ const Banner = () => {
 }
 
 const Content = () => {
-
   const [isClickableContent, setIsClickableContent] = useState(false);
 
    const handleScrollContent = () => {
@@ -145,43 +129,44 @@ const Content = () => {
       window.removeEventListener("scroll", handleScrollContent);
     };
   }, []);
-
-  return(
-
-    <div className='content'
-    style={{pointerEvents: isClickableContent ? 'auto' : 'none'}}
-    >
+  return (
+    // <div className='content-wrapper' style={{pointerEvents: isClickableContent ? 'auto' : 'none'}}>
+    <div className='content-wrapper'>
       <div className='home-content'>
         <HomeContent/>
-    <div className='home-content-heading'>
-      <div className='left'>
-        FLIMOGRAPHY
+      <div className='home-content-heading'>
+        <div className='left'>
+          FLIMOGRAPHY
+        </div>
       </div>
-    </div>
-    <Flimography/>
-    <Footer/>
+        <Flimography/>
+        <Footer/>
       </div>
     </div>
   )
 }
 
 const WorksData = [
-    {title:"ANIMATED SHORT", link:"anim-short", role:['Art', 'Development'], year: '2023', 
-      desc:"Some tidbits from my ongoing animated short film.",
+    {title:"ANIMATION SHORT", link:"anim-short", role:['Development', 'Design'], year: '2023', 
+      desc:"My first animation short that i'm currently working on.",
       image:"images/adya.png",
     },
     {title:"dGROOM DEFORMER", link:"dgroom-deformer", role:['Development', 'Tools'], year: '2023', 
-      desc:"Custom Houdini groom deformer built to tackle complex guide-to-groom deformations.",
+      desc:"Custom houdini groom deformer built with opencl and render time procedural integration.",
       image:"images/art.png",
     },
-    {title:"STORYBOARD - ANIMATICS", link:"story-board", role:['Art', 'Viz Dev'], year: '2023', 
-      desc:"Some fun stuff I enjoy learning and exploring",
+    {title:"STORYBOARD | ANIMATICS", link:"story-board", role:['Art', 'Viz Dev'], year: '2023', 
+      desc:"Custom houdini groom deformer built with opencl and render time procedural integration.",
       image:"images/adya_paint.png",
     },
     {title:"NYX", link:"nyx", role:['Development', 'Tools'], year: '2023', 
       desc:"Nyx is a pipeline tool to maintain visual effect assets and native USD support to create scene assembly file.",
       image:"images/yazhi.png",
-    }
+    },
+    {title:"YAZHI", link:"yazhi", role:['Development', 'Tools'], year: '2023', 
+      desc:"Nyx is a pipeline tool to maintain visual effect assets and native USD support to create scene assembly file.",
+      image:"images/piolet.png",
+    },
 ]
 
 
@@ -195,7 +180,7 @@ const HomeContent = () => {
         WORKS
       </div>
       <div className='mid'>
-        Here you’ll find the progress of my ongoing animated short film and development projects, showcasing my passion for art and technology
+        The following are the works from some of my personal projects
       </div>
       <div className='right'>
         <p>SOCIALS</p>
@@ -240,9 +225,9 @@ const WorkItem = ({link, title, image, role, desc}) => {
             {desc}
           </div>
             <div className='sub-heading'>
-              {role.map((item, index) => (
-                  <p key={index}>{item}</p>
-              ))}
+              <p>Short Film</p>
+              <p>Direction</p>
+              <p>Art</p>
             </div>
         </div>
         <img className='image' src={image}/>

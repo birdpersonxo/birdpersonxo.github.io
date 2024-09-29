@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 const BlogPostData = [
     {
     name:"OpenCL Ray Tracing in One weekend",
@@ -13,6 +14,10 @@ const BlogPostData = [
 ]
 const BlogPage = () => {
     return(
+        <>
+        <Head>
+            <title>Deepak Rajan — Blogs</title>
+        </Head>
         <div className='content-item'>
             <div className='blogs-wrapper'>
             <div className='page-title'>BLOGS</div>
@@ -25,6 +30,7 @@ const BlogPage = () => {
                 ))}
             </div>
         </div>
+        </>
     )
 }
 

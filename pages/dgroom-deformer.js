@@ -1,3 +1,4 @@
+import Head from 'next/head';
 const DGroomDeformer = () => {
     return(
         <div className='content-item'>
@@ -15,6 +16,9 @@ export default DGroomDeformer;
 const WorkHeader = () => {
     return (
         <>
+        <Head>
+            <title>Deepak Rajan — dGroom Deformer</title>
+        </Head>
         <div className='work-header-wrapper'>
             <div className='title'>
                 dGroom Deformer

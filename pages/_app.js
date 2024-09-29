@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Lenis from '@studio-freight/lenis';
 import { useEffect , useState} from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -50,12 +51,17 @@ function MyApp({ Component, pageProps }) {
     return () => lenis.destroy(); // Cleanup on unmount
   }, []);
   return (
+    <>
+    <Head>
+      <title>Hello world</title>
+    </Head>
     <div className='content-main'>
     <Header />
     <div className='content'>
       <Component {...pageProps} />
     </div>
     </div>
+    </>
   );
 }
 

@@ -30,7 +30,7 @@ const ImageData = [
             aspect_ratio: 3/2,
             name:"hello my dear",
         },
-        {img: "https://freight.cargo.site/w/400/i/b7117077121e5c5bc597c468d53cce864a9d3528d3baac6d0807daec1cacfb3d/BDIF-Basil-Wolverton-6.jpg",
+        {img: "https://cdnb.artstation.com/p/assets/images/images/080/033/133/large/masha-kuravcova-.jpg?1726500440",
             aspect_ratio: 1.8/2,
             name:"hello my dear",
         },
