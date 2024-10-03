@@ -4,12 +4,12 @@ const BlogPostData = [
     {
     name:"OpenCL Ray Tracing in One weekend",
     image:"/images/adya.png",
-    desc:"Jimmy Donaldson is an internet personality, businessman, and philanthropist. He operates several popular YouTube channels, a delivery based fast food restaurant, MrBeast Burger, and two philanthropic programs:",
+    desc:"Temp",
     },
     {
     name:"OpenCL",
     image:"/images/adya.png",
-    desc:"Jimmy Donaldson is an internet personality, businessman, and philanthropist. He operates several popular YouTube channels, a delivery based fast food restaurant, MrBeast Burger, and two philanthropic programs:",
+    desc:"Temp",
     },
 ]
 const BlogPage = () => {
