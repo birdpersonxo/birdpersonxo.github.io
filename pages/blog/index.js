@@ -13,7 +13,7 @@ const BlogPostData = [
     },
 ]
 const BlogPage = () => {
-    return(
+   return(
         <>
         <Head>
             <title>Deepak Rajan — Blogs</title>

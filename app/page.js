@@ -155,7 +155,7 @@ const Content = () => {
         <HomeContent/>
     <div className='home-content-heading'>
       <div className='left'>
-        FLIMOGRAPHY
+        FILMOGRAPHY
       </div>
     </div>
     <Flimography/>
