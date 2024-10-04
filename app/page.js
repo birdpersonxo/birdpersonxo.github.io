@@ -1,10 +1,14 @@
 "use client"; // Add this line at the top
 const punycode = require('punycode/');
 import '../style/index.scss';
+
 import { GoArrowDown } from "react-icons/go";
+import { GoKebabHorizontal } from "react-icons/go";
 import { GoArrowUpRight } from "react-icons/go";
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Wabalaba from '@/components/Wabalaba';
 import Lenis from '@studio-freight/lenis';
 import { useEffect , useState} from 'react';
 import { motion } from 'framer-motion';
@@ -154,13 +158,14 @@ const Content = () => {
       <div className='home-content'>
         <HomeContent/>
     <div className='home-content-heading'>
-      <div className='left'>
+      <div className='left heading-small'>
         FILMOGRAPHY
       </div>
     </div>
     <Flimography/>
     <Footer/>
       </div>
+      <Wabalaba/>
     </div>
   )
 }
@@ -199,8 +204,8 @@ const HomeContent = () => {
       </div>
       <div className='right'>
         <p>SOCIALS</p>
-        <Link href="#">Instagram</Link>
-        <Link href="#">YOUTUBE</Link>
+        <Link href="https://www.instagram.com/deepak_rajan_/">Instagram</Link>
+        <Link href="https://youtube.com/@DeepakRajan">YOUTUBE</Link>
         <Link href="#"></Link>
       </div>
     </div>
@@ -243,6 +248,10 @@ const WorkItem = ({link, title, image, role, desc}) => {
               {role.map((item, index) => (
                   <p key={index}>{item}</p>
               ))}
+              <div href="#" className='view-project'>
+                View project
+                <GoArrowUpRight />
+              </div>
             </div>
         </div>
         <img className='image' src={image}/>
@@ -256,21 +265,6 @@ const WorkItem = ({link, title, image, role, desc}) => {
 }
 
 
-const FlimographyTable = ()=> {
-  return (
-    <div className='flim-wrapper'>
-      {/* <img className='poster' src="/images/adya.png"/> */}
-      <div className='flimographyTable'>
-        <div className='content-item'>
-          SHOWS
-        </div>
-      {FlimographyData.map((item, index) => (
-        <Film key={index} name={item.name} studio={item.studio} role={item.role} year={item.year} link={item.link}/>
-      ))}
-      </div>
-    </div>
-  )
-}
 
 const FilmData = [
     {name: "Sonic 3",studio:"paramount",  year: '2024', studio: "RSP - ADELAIDE", role:"Creature TD", 
@@ -295,8 +289,8 @@ const FilmData = [
 
 const Flimography = () => {
   return (
-    <div className='flimography-wrapper'>
-      <div className='flimography-grid'>
+    <div className='filmography-wrapper'>
+      <div className='filmography-grid'>
         {FilmData.map((item, index) => (
           <Film key={index} 
           name={item.name}

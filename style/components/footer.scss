@@ -14,4 +14,12 @@
     p{
         padding-top:5px;
     }
+
+    .left, .mid, .right{
+        display: flex;
+        flex-direction: column;
+        a{
+            padding-bottom: 4px;
+        }
+    }
 }

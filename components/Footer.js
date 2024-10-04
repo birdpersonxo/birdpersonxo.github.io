@@ -4,14 +4,16 @@ const Footer = () => {
         <>
         <div className='footer-wrapper'>
             <div className='left'>
-                <p>Hello</p>
+                <Link href="https://www.instagram.com/deepak_rajan_/">GITHUB</Link>
+                <Link href="https://youtube.com/@DeepakRajan">LINKEDIN</Link>
             </div>
             <div className='mid'>
-                <p>Hello</p>
+                <Link href="https://www.instagram.com/deepak_rajan_/">Instagram</Link>
+                <Link href="https://youtube.com/@DeepakRajan">YOUTUBE</Link>
             </div>
             <div className='right'>
-                <p>EMAIL</p>
-                <p>CONTACT</p>
+                <Link href="https://www.instagram.com/deepak_rajan_/">EMAIL</Link>
+                <Link href="https://youtube.com/@DeepakRajan">CONTACT</Link>
             </div>
         </div>
         </>

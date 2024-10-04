@@ -1,7 +1,7 @@
 // components/VimeoEmbed.js
 const VimeoEmbed = ({ videoId }) => {
     return (
-      <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+      <div style={{ position: 'relative', height: "100vh", overflow: 'hidden' }}>
         <iframe
           src={`https://player.vimeo.com/video/${videoId}`}
           style={{
@@ -12,7 +12,7 @@ const VimeoEmbed = ({ videoId }) => {
             height: '100%',
             border: 0,
           }}
-          allow="autoplay; fullscreen; picture-in-picture"
+          allow="autoplay; fullscreen;"
           allowFullScreen
         />
       </div>
