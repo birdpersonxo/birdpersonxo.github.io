@@ -15,6 +15,10 @@
   color: #ffffff; /* Set the text color for selected text */
 }
 
+
+// variables
+$max-width-mobile: 768px;
+
 @import 'components/header.scss';
 @import 'components/footer.scss';
 @import 'components/work-component.scss';

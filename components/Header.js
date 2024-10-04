@@ -36,9 +36,9 @@ const Header = () => {
                     <Link href="profile" className="menu profile">
                         PROFILE
                     </Link>
-                    <Link href="#" onClick={toggleMenu}>
+                    <div className="menu-icon" href="#" onClick={toggleMenu}>
                         <FiAlignJustify size={28}/>
-                    </Link>
+                    </div>
                 </div>
 
             </div>

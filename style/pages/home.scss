@@ -45,6 +45,19 @@
                     padding-right:2px;
                 }
             }
+
+        @media (max-width:768px){
+            flex-direction: column;
+
+            .heading{
+                font-size: 46px;
+            }
+
+            .side{
+                font-size: 15px;
+                padding-top: 10px;
+            }
+        }
     }
 
     .scroll{
