@@ -124,7 +124,7 @@ const Resume = () => {
                 <br/>
                 <Link className="link" href="https://www.mcgansarch.com/">Bachelor of Architecture </Link>
                 <GoArrowUpRight />
-                <p className="item-sub-title"> McGan's Ooty School of Architecture</p>
+                <p className="item-sub-title"> McGan&apos;s Ooty School of Architecture</p>
                 <GoHorizontalRule />
             </div>
 
