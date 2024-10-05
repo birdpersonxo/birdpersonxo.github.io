@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { GoDotFill } from "react-icons/go";
 import { GoHorizontalRule } from "react-icons/go";
+import { GoArrowUpRight } from "react-icons/go";
 
 
 const Resume = () => {
@@ -31,33 +32,39 @@ const Resume = () => {
                 screen, exploring the limitless possibilities of film and visual storytelling.
             </div>
 
+            <div className="heading">
+                Works
+            </div>
 
             <div className="heading">
                 Work Experiences
             </div>
             <div className="item-wrapper">
-                <GoHorizontalRule />
                 <div className='wrapper'>
-                    <p className='item-title'>Rising Sun Pictures - Adelaide</p>
+                    <Link className='link' href="https://www.rsp.com.au/">Rising Sun Pictures - Adelaide</Link>
+                    <GoArrowUpRight />
                     <p className='item-sub-title'>Character Fx TD - 2024</p>
                 <GoHorizontalRule />
                 </div>
 
                 <div className='wrapper'>
-                    <p className='item-title'>Double Negative - Bangalore </p>
+                    <Link className='link' href="https://www.dneg.com/">Double Negative - Bangalore </Link>
+                    <GoArrowUpRight />
                     <p className='item-sub-title'>Character Fx TD - 2023</p>
                 <GoHorizontalRule />
                 </div>
 
 
                 <div className='wrapper'>
-                    <p className='item-title'>Motion Picture Company - Bangalore</p>
+                    <Link className='link' href="https://www.mpcvfx.com/en/">Motion Picture Company - Bangalore</Link>
+                    <GoArrowUpRight />
                     <p className='item-sub-title'> Creature Effects Artist - 2022</p>
                 <GoHorizontalRule />
                 </div>
 
                 <div className='wrapper'>
-                    <p className='item-title'>Wright Inspires - Bangalore</p> 
+                    <Link className='link' href="https://www.wrightinspires.com/">Wright Inspires - Bangalore</Link> 
+                    <GoArrowUpRight />
                     <p className='item-sub-title'>Architect - 2019</p>
                 <GoHorizontalRule />
                 </div>
@@ -68,19 +75,19 @@ const Resume = () => {
                 Artistic Skills
             </div>
             <div className="item-wrapper">
-                <div className='flex'>
+                <div className='flex pb4'>
                     <GoHorizontalRule />
                     <p className='item-title padding-left'>Character Design - 2D & 3D</p>
                 </div>
-                <div className='flex'>
+                <div className='flex pb4'>
                     <GoHorizontalRule />
                     <p className='item-title padding-left'>Storyboard / Animatics</p>
                 </div>
-                <div className='flex'>
+                <div className='flex pb4'>
                     <GoHorizontalRule />
                     <p className='item-title padding-left'>Fine Arts</p>
                 </div>
-                <div className='flex'>
+                <div className='flex pb4'>
                     <GoHorizontalRule />
                     <p className='item-title padding-left'>Motion Graphics</p>
                 </div>
@@ -91,17 +98,21 @@ const Resume = () => {
                 Technical Skills
             </div>
             <div className="item-wrapper">
-                <div className='flex'>
+                <div className='flex pb4'>
                     <GoHorizontalRule />
                     <p className='item-title padding-left'>Visual Effects Softwares</p>
                 </div>
-                <div className='flex'>
+                <div className='flex pb4'>
                     <GoHorizontalRule />
                     <p className='item-title padding-left'>Design / CAD Softwares</p>
                 </div>
-                <div className='flex'>
+                <div className='flex pb4'>
                     <GoHorizontalRule />
                     <p className='item-title padding-left'>Programming</p>
+                </div>
+                <div className='flex pb4'>
+                    <GoHorizontalRule />
+                    <p className='item-title padding-left'>Web Development</p>
                 </div>
             </div>
 
@@ -110,7 +121,9 @@ const Resume = () => {
             </div>
             <div className="item-wrapper">
                 <GoHorizontalRule />
-                <p className="item-title">Bachelor of Architecture </p>
+                <br/>
+                <Link className="link" href="https://www.mcgansarch.com/">Bachelor of Architecture </Link>
+                <GoArrowUpRight />
                 <p className="item-sub-title"> McGan's Ooty School of Architecture</p>
                 <GoHorizontalRule />
             </div>
@@ -120,22 +133,23 @@ const Resume = () => {
                 Contact
             </div>
             <div className="wrapper">
-                <div className='item-wrapper flex'>
-                    <p className='item-sub-title'>EMAIL</p>
+                <div className='contact-wrapper flex'>
+                    <p className='title'>EMAIL</p>
                     <GoHorizontalRule />
-                    <p className='item-title text-transform-none'> birdperson.me@gmail.com</p>
+                    <p className='detail'> birdperson.me@gmail.com</p>
                 </div>
 
-                <div className='item-wrapper flex'>
-                    <p className='item-sub-title'>WEBSITE</p>
+                <div className='contact-wrapper flex'>
+                    <p className='title'>WEBSITE</p>
                     <GoHorizontalRule />
-                    <p className='item-title text-transform-none'><Link href="https://wwww.birdperson.me">www.birdperson.me</Link></p>
+                    <p className='detail'><Link href="https://wwww.birdperson.me">www.birdperson.me</Link></p>
+                    <i>* under construction</i>
                 </div>
 
-                <div className='item-wrapper flex'>
-                    <p className='item-sub-title text-transform-none'>PHONE</p>
+                <div className='contact-wrapper flex'>
+                    <p className='title'>PHONE</p>
                     <GoHorizontalRule />
-                    <p className='item-title'> +61 452491574</p>
+                    <p className='detail'> +61 452491574</p>
                 </div>
             </div>
         </div>
