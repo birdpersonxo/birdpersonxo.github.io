@@ -22,11 +22,13 @@ $max-width-mobile: 768px;
 @import 'components/header.scss';
 @import 'components/footer.scss';
 @import 'components/work-component.scss';
+@import 'components/elements.scss';
 
 @import 'pages/home.scss';
 @import 'pages/work.scss';
 @import 'pages/blog.scss';
 @import 'pages/art.scss';
+@import 'pages/resume.scss';
 
 body{
   background-color: $background-color;

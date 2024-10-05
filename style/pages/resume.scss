@@ -1,0 +1,72 @@
+.resume-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.name{
+    font-size: 30px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    padding-bottom: 20px;
+    b{
+        font-weight: 600;
+    }
+}
+
+.about{
+    font-size: 14px;
+    font-family: $font-inter;
+    max-width: 500px;
+    line-height: 16px;
+}
+
+.heading{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+
+.item-wrapper{
+    font-size: 13px;
+    font-family: $font-plex;
+    text-transform: uppercase;
+}
+
+.title{
+    color:$gray-600;
+}
+
+.item-title{
+    font-weight: 600;
+    padding-bottom: 3px;
+
+    a{
+        color:$text-color;
+    }
+}
+
+.item-sub-title{
+    color:$gray-500;
+    padding-bottom: 3px;
+}
+
+.wrapper{
+    padding-bottom: 6px;
+}
+
+.flex {
+    display: flex;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.padding-left{
+    padding-left: 4px;
+}
+
+.text-transfrom-none{
+    text-transform: none;
+}

@@ -45,9 +45,7 @@ const Header = () => {
         </div>
         {menuOpen && (
             <div className={`fullscreen-menu ${menuOpen ? "open" : ""}`}>
-                <Link href="#" className="close-btn" onClick={toggleMenu}>
-                    <GoX />
-                </Link>
+                <GoX className='close-btn' onClick={toggleMenu}/>
                 <Link href="/" className="menu-item">
                     WORKS
                 </Link>

@@ -9,6 +9,9 @@ import Head from 'next/head';
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
+    // Check if the current route contains '/resume'
+    const showHeader = router.pathname !== '/resume';
+
     useEffect(() => {
         const header = document.querySelector('.header');
         const menu_wrapper = document.querySelector('.menu-wrapper');
@@ -53,10 +56,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
-      <title>Hello world</title>
+      <title>Deepak Rajan — +</title>
     </Head>
     <div className='content-main'>
-    <Header />
+    {showHeader && <Header />}
     <div className='content'>
       <Component {...pageProps} />
     </div>

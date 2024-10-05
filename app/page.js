@@ -1,5 +1,4 @@
 "use client"; // Add this line at the top
-const punycode = require('punycode/');
 import '../style/index.scss';
 
 import { GoArrowDown } from "react-icons/go";
@@ -66,9 +65,9 @@ export default function Home() {
       <title>birdperson</title>
     </Head>
     <Header/>
-    <Link href="/showreel">
+    {/* <Link href="/showreel"> */}
       <Banner/>
-    </Link>
+    {/* </Link> */}
     <Content/>
     </>
   );
@@ -97,6 +96,7 @@ const Banner = () => {
   return (
     <div className='banner-wrapper' style={{opacity}}>
       {/* <Animator animation={batch(Sticky(), FadeOut())}> */}
+      <Link href="/showreel">
         <video className='video' autoPlay loop muted>
           <source src="/videos/bannerVideo.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -109,6 +109,7 @@ const Banner = () => {
             <p>Storyboard</p>
           </span>
         </div>
+      </Link>
       <div className='scroll'>
         <div className="time-zone">
             <Clock/>

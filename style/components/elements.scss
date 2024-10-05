@@ -1,0 +1,26 @@
+.work-content-wrapper{
+    width:100%;
+    display: flex;
+    justify-content: center;
+
+    .work-content{
+        max-width: 700px;
+
+        a{
+            color:red;
+        }
+    }
+}
+.element-paragraph{
+    padding-bottom: 20px;
+    line-height: 18px;
+    font-size: 15px;
+    font-family: $font-inter;
+}
+
+.element-snippet{
+    max-width: 100%;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+}

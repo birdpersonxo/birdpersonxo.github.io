@@ -4,7 +4,7 @@ const Footer = () => {
         <>
         <div className='footer-wrapper'>
             <div className='left'>
-                <Link href="https://www.instagram.com/deepak_rajan_/">GITHUB</Link>
+                <Link href="https://github.com/imbirdperson">GITHUB</Link>
                 <Link href="https://youtube.com/@DeepakRajan">LINKEDIN</Link>
             </div>
             <div className='mid'>
