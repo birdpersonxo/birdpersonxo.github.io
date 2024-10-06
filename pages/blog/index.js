@@ -12,7 +12,7 @@ const BlogPostData = [
     {
     name:"Bending branches using Math",
     image:"/images/adya.png",
-    desc:"Branching logic using math and some non-linear transformation to shape them.",
+    desc:"Vegetation branch logic using math and some non-linear transformation to shape them.",
     url:"blog/bending-branches",
     date: "20 Sep 2024",
     },

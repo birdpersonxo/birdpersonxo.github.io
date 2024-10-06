@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { GoDotFill } from "react-icons/go";
 import { GoHorizontalRule } from "react-icons/go";
 import { GoArrowUpRight } from "react-icons/go";
+import { GoLinkExternal } from "react-icons/go";
 
 
 const Resume = () => {
@@ -20,16 +21,19 @@ const Resume = () => {
                 <b>Deepak</b> Rajan
             </div>
             <div className="about">
-                Hello! 
-                As an architect and visual effects artist, 
-                I have honed my skills in blending design,
-                technology, and storytelling.
-                My journey across these fields has given me a unique 
-                perspective on spatial aesthetics and visual narratives.
-                Now, driven by a passion for directing,
-                I aim to merge my architectural precision and 
-                creative visual expertise to craft compelling stories on 
-                screen, exploring the limitless possibilities of film and visual storytelling.
+                Hello!
+
+                As both a visual effects artist and architect,
+                I’ve always been deeply passionate about the intersection of art and technology.
+                <br/>
+                <br/>
+                My love for animation led me on a journey to teach myself visual effects and animation software.
+                After three years of working in the visual effects industry,
+                I now have a solid understanding of how these fields operate,
+                combining both creative and technical aspects.
+                I feel that now is the perfect time to bring my skills together to tell the stories 
+                I’ve always wanted to share, using the power of visual effects and animation.
+
             </div>
 
             <div className="heading">

@@ -4,9 +4,9 @@ const BlogImage = ({src, content="" ,height='none'}) => {
         final_height = height;
     }
     return (
-        <div className='image-wrapper'>
-            <img className="image" src={src} style={{height: final_height}}/>
-            <div className='img-content'>{content}</div>
+        <div className='blog-image-wrapper'>
+            <img className="blog-image" src={src} style={{height: final_height}}/>
+            <div className='blog-img-content'>{content}</div>
         </div>
     )
 }

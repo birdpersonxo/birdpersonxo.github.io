@@ -70,3 +70,44 @@
 
 }
 
+.work-main-content-wrapper{
+    display: flex;
+    width:100%;
+    justify-content: center;
+
+    .work-main-content{
+        max-width: 900px;
+        width:100%;
+
+      p{
+            font-family: $font-serif;
+            font-family: $font-inter;
+            font-weight: 350;
+            line-height: 22px;
+            padding: 10px 0px;
+        }
+
+        h1{
+            font-size: 40px;
+            font-family: $font-inter;
+
+        } 
+
+        h2{
+            font-family: $font-inter;
+            font-size: 25px;
+            font-weight: 600;
+            padding: 20px 0px;
+            padding-top:30px;
+        }
+
+        h3{
+
+            font-family: $font-inter;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 10px 0px;
+        }
+
+    }
+}

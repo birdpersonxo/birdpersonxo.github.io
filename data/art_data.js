@@ -36,9 +36,9 @@ const ImageData = [
             aspect_ratio: 1.8/2,
             name:"Broad Strokes",
         },
-        {img: "https://cdnb.artstation.com/p/assets/images/images/080/661/945/large/deepak-rajan-79857749-653879448692338-1588000486580926311-n-1440x1440.jpg?1728180371",
+        {img: "https://cdnb.artstation.com/p/assets/images/images/080/669/593/large/deepak-rajan-render-0004.jpg?1728214690",
             aspect_ratio: 2/2,
-            name:"Translucent",
+            name:"ASCII",
         },
     ],
     [
@@ -65,17 +65,10 @@ const ImageData = [
     ],
     [
 
-        {img: "https://freight.cargo.site/t/original/i/ea748786d0c688958f163256664009ff0c6e5cc6f79231bfac6610ea90018844/bok_1941_radiationtrap_walton_o.jpg",
-            aspect_ratio: 1.6/2,
-            name:"temp content",
-        },
-        {img: "https://freight.cargo.site/w/900/q/75/i/ae1fac319abc772deba3c678fc0a2da066b5b24c581c763c91b5489846a979d9/14412241190_0c1aa63ede_o.jpg",
-            aspect_ratio: 1.6/2,
-            name:"temp content",
-        },
-        {img: "https://freight.cargo.site/w/800/q/75/i/f45ff1a140ff477d2c7ba6bb88b41e1b910fd33d1321221e9bfcf917fd9fc641/CRI_115793_o.jpg",
-            aspect_ratio: 1.6/2,
-            name:"temp content",
+
+        {img: "https://cdnb.artstation.com/p/assets/images/images/080/661/945/large/deepak-rajan-79857749-653879448692338-1588000486580926311-n-1440x1440.jpg?1728180371",
+            aspect_ratio: 2/2,
+            name:"Translucent",
         },
     ]
 ]

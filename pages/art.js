@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ImageData from '../data/art_data';
 import Head from 'next/head';
+import Footer from '../components/Footer';
 
 const ArtPage = () => {
     const [isFullScreen, setIsFullScreen] = useState(false);
@@ -34,6 +35,7 @@ const ArtPage = () => {
                 ))}
             </div>
         </div>
+        <Footer mode="black"/>
         </>
     )
 }
