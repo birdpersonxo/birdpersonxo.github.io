@@ -54,7 +54,7 @@ const WorkHeader = () => {
         </Head>
         <div className='work-header-wrapper'>
             <div className='work-header'>
-                <div className='title'>
+                <div className='work-title'>
                     dGroom Deformer
                 </div>
                 <div className='year'>

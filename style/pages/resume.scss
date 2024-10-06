@@ -33,6 +33,24 @@
     text-transform: uppercase;
 }
 
+.work-item-resume{
+    color:$text-color;
+    font-size: 12px;
+    font-family: $font-plex;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    a{
+        color:$background-color;
+        font-weight: 500;
+        background-color: $text-color;
+
+        &:hover{
+            color:$text-color;
+            background-color: $background-color;
+        }
+    }
+}
+
 .title{
     color:$gray-600;
 }

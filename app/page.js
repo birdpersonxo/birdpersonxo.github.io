@@ -181,11 +181,11 @@ const WorksData = [
       image:"images/art.png",
     },
     {title:"STORYBOARD - ANIMATICS", link:"story-board", role:['Art', 'Viz Dev'], year: '2023', 
-      desc:"Some fun stuff I enjoy learning and exploring",
+      desc:"Some stuff I enjoy learning and exploring...",
       image:"images/adya_paint.png",
     },
     {title:"NYX", link:"nyx", role:['Development', 'Tools'], year: '2023', 
-      desc:"Nyx is a pipeline tool to maintain visual effect assets and native USD support to create scene assembly file.",
+      desc:"Nyx is a visual effects pipeline tools built around Universal Scene Description.",
       image:"images/yazhi.png",
     }
 ]

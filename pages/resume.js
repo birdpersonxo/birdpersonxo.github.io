@@ -35,6 +35,18 @@ const Resume = () => {
             <div className="heading">
                 Works
             </div>
+            <div className='item-wrapper work-item-resume'>
+                <Link href="https://www.birdperson.me/showreel">Visual Effect Showreel</Link>
+                <GoArrowUpRight />
+            </div>
+            <div className='item-wrapper work-item-resume'>
+                <Link href="https://www.birdperson.me/anim-short">Animated Short (Work in Progress)</Link>
+                <GoArrowUpRight />
+            </div>
+            <div className='item-wrapper work-item-resume'>
+                <Link href="https://www.birdperson.me/art">Art</Link>
+                <GoArrowUpRight />
+            </div>
 
             <div className="heading">
                 Work Experiences

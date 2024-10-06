@@ -24,16 +24,16 @@ const Header = () => {
                     <Link href="/" className="menu">
                         WORKS
                     </Link>
-                    <Link href="art" className="menu">
+                    <Link href="/art" className="menu">
                         ART
                     </Link>
                     <Link href="https://imbirdperson.gumroad.com/" className="menu">
                         STORE
                     </Link>
-                    <Link href="blog" className="menu">
+                    <Link href="/blog" className="menu">
                         BLOG
                     </Link>
-                    <Link href="profile" className="menu profile">
+                    <Link href="/profile" className="menu profile">
                         PROFILE
                     </Link>
                     <div className="menu-icon" href="#" onClick={toggleMenu}>

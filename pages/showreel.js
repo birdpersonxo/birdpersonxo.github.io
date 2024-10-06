@@ -7,8 +7,8 @@ const ShowreelPage = () => {
             <Head>
                 <title>Deepak Rajan — Showreel</title>
             </Head>
-            <div className='content-item'>
-                <VimeoEmbed videoId={1013929752}/>
+            <VimeoEmbed videoId={1013929752}/>
+            <div>
             </div>
         </>
     )
