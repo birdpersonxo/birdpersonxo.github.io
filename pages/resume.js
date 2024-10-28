@@ -165,7 +165,7 @@ const Resume = () => {
                 <div className='contact-wrapper flex'>
                     <p className='title'>PHONE</p>
                     <GoHorizontalRule />
-                    <p className='detail'> +61 452491574</p>
+                    <p className='detail'> +91 96005 92646</p>
                 </div>
             </div>
         </div>
