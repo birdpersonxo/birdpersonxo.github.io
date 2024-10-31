@@ -13,6 +13,7 @@ const ArtPage = () => {
         setIsFullScreen(true);
     };
 
+
     useEffect(() => {
         // ImageRowCalculate(ImageData);
     }, []);
