@@ -13,7 +13,7 @@
         padding-bottom: 30px;
         @media (max-width:$max-width-mobile) {
            flex-direction: column; 
-           padding-bottom: 0;
+           padding-bottom: 30px;
         }
         .work-title{
             font-size: 65px;
@@ -109,5 +109,23 @@
             padding: 10px 0px;
         }
 
+    }
+}
+
+
+.viemo-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    
+    @media (max-width:$max-width-mobile) {
+        padding-bottom: 20px;  // Reduced padding on mobile
+    }
+
+    .viemo-iframe {
+        width: 100%;
+        height: 56.25vw;  // Maintains 16:9 aspect ratio
+        max-height: 600px;
+        border: none;
     }
 }

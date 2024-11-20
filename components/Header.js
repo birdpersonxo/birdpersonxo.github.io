@@ -27,7 +27,7 @@ const Header = () => {
                     <Link href="/art" className="menu">
                         ART
                     </Link>
-                    <Link href="https://imbirdperson.gumroad.com/" className="menu">
+                    <Link href="/store" className="menu">
                         STORE
                     </Link>
                     <Link href="/blog" className="menu">

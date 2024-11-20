@@ -1,0 +1,57 @@
+END USER LICENSE AGREEMENT
+
+Effective Date: 21 - 7 - 2024
+
+IMPORTANT: PLEASE READ THIS END USER LICENSE AGREEMENT CAREFULLY BEFORE INSTALLING OR USING THE SOFTWARE. BY INSTALLING OR USING THE SOFTWARE, YOU AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT INSTALL OR USE THE SOFTWARE.
+
+License Grant
+
+Subject to the terms and conditions of this Agreement, Deepak Rajan grants you a non-exclusive, non-transferable, limited license to use the software product(s) provided herewith (the “Software”) solely for your internal business or personal purposes.
+
+License Restrictions
+
+You may not:
+
+a. Distribute, sell, lease, rent, or sublicense the Software to any third party;
+
+b. Modify, reverse engineer, decompile, or disassemble the Software;
+
+c. Use the Software for any purpose that is unlawful or prohibited by this Agreement;
+
+d. Copy, reproduce, or create derivative works based on the Software except as expressly permitted by this Agreement.
+
+Ownership
+
+The Software is licensed, not sold. All rights, title, and interest in and to the Software, including all intellectual property rights, are owned by Licensor or its licensors. This Agreement does not grant you any rights to use any trademarks, trade names, or other identifiers of Licensor.
+
+Updates and Support
+
+Licensor may provide updates, upgrades, or support for the Software at its discretion. Such updates or support may be subject to additional terms and conditions.
+
+Termination
+
+This Agreement is effective until terminated. You may terminate this Agreement at any time by uninstalling and destroying all copies of the Software. Licensor may terminate this Agreement if you fail to comply with any term or condition. Upon termination, you must cease all use of the Software and destroy all copies in your possession.
+
+Warranty Disclaimer
+
+THE SOFTWARE IS PROVIDED “AS IS” AND LICENSOR DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL MEET YOUR REQUIREMENTS OR BE FREE FROM ERRORS OR INTERRUPTIONS.
+
+Limitation of Liability
+
+IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT OR THE USE OF THE SOFTWARE, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL LICENSOR’S LIABILITY EXCEED THE AMOUNT PAID BY YOU FOR THE SOFTWARE.
+
+Governing Law
+
+This Agreement shall be governed by and construed in accordance with the laws of India, without regard to its conflict of law principles. Any disputes arising out of or related to this Agreement shall be resolved in the courts of India.
+
+Miscellaneous
+
+a. This Agreement constitutes the entire agreement between you and Licensor regarding the Software and supersedes all prior agreements and understandings, whether written or oral, relating to the Software.
+
+b. If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+
+c. Licensor’s failure to enforce any right or provision of this Agreement shall not constitute a waiver of such right or provision.
+
+Contact Information
+
+If you have any questions about this Agreement or the Software, please contact Deepak Rajan at birdperson.me@gmail.com

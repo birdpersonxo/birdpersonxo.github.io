@@ -178,7 +178,7 @@ const WorksData = [
     },
     {title:"dGROOM DEFORMER", link:"dgroom-deformer", role:['Development', 'Tools'], year: '2023', 
       desc:"Custom Houdini groom deformer built to tackle complex guide-to-groom deformations.",
-      image:"images/art.png",
+      image:"images/deformer.webp",
     },
     {title:"STORYBOARD - ANIMATICS", link:"story-board", role:['Art', 'Viz Dev'], year: '2023', 
       desc:"Some stuff I enjoy learning and exploring...",

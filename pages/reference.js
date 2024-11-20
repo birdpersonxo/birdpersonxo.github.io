@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import Footer from '../components/Footer';
-import Paragraph from '../components/elements/Paragraph';
-import Snippet from '../components/elements/Snippet';
+import Footer from '../../components/Footer';
+import Paragraph from '../../components/elements/Paragraph';
+import Snippet from '../../components/elements/Snippet';
+import VimeoEmbed from '../../components/Viemo';
 
 const DGroomDeformer = () => {
     const codeBlock = `
@@ -23,16 +24,8 @@ const GroceryItem: React.FC<GroceryItemProps> = ({ item }) => {
             <div className='work-content-wrapper'>
                 <div className='work-content'>
                     <Paragraph>
-                        This is where the content goes ,
-                        This deformer and cannot be done in the same directon,
-                        the problem is not your own problembatic.
-                        This is where the content goes ,
-                        This is where the content goes ,
-                        This deformer and cannot be done in the same directon,
-                        the problem is not your own problembatic.
-                        This deformer and cannot be done in the same directon,
-                        the problem is not your own problembatic.
-                        <a href="hello">Hello</a>
+                    This dGroom Deformer tool allows you to easily deform grooms with generated or existing guides, making your workflow smoother and more efficient. 16 hda's with with open source code. Features: Guide Generation , Level of detail and Style Blending
+                        {/* <a href="hello">Hello</a> */}
                     </Paragraph>
                     <Snippet codeBlock={codeBlock}/>
                 </div>
@@ -62,12 +55,12 @@ const WorkHeader = () => {
                     <p>DEVELOPEMENT</p> 
                 </div>
                 <div className='desc'>
-                    This is a test project that i ahve delopemed to maintain the groom.
-                    This is a test project that i ahve delopemed to maintain the groom.
+                This dGroom Deformer tool allows you to easily deform grooms with generated or existing guides, making your workflow smoother and more efficient. 16 hda's with with open source code. Features: Guide Generation , Level of detail and Style Blending
                 </div>
             </div>
         </div>
-        <img className='poster' src="/images/adya.png"/>
+        {/* <img className='poster' src="/images/adya.png"/> */}
+        <VimeoEmbed className="poster" videoId="987950777"/>
         </>
     )
 }
