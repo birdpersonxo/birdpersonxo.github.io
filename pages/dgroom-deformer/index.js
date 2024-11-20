@@ -13,7 +13,7 @@ const DGroomDeformer = () => {
             <div className='work-content-wrapper'>
                 <div className='work-content'>
                     <Paragraph>
-                    This dGroom Deformer tool allows you to easily deform grooms with generated or existing guides, making your workflow smoother and more efficient. 16 hda's with with open source code. Features: Guide Generation , Level of detail and Style Blending
+This dGroom Deformer tool allows you to easily deform grooms with generated or existing guides, making your workflow smoother and more efficient. 16 hda&apos;s with with open source code. Features: Guide Generation , Level of detail and Style Blending
                     </Paragraph>
                     <BuyNow name="Get Deformer" link="/dgroom-deformer/buy" margin="6px"/>
                 </div>
@@ -46,7 +46,7 @@ const WorkHeader = () => {
                     </p>
                 </div>
                 <div className='desc'>
-                This dGroom Deformer tool allows you to easily deform grooms with generated or existing guides, making your workflow smoother and more efficient. 16 hda's with with open source code. Features: Guide Generation , Level of detail and Style Blending
+                This dGroom Deformer tool allows you to easily deform grooms with generated or existing guides, making your workflow smoother and more efficient. 16 hda&apos;s with with open source code. Features: Guide Generation , Level of detail and Style Blending
                 </div>
             </div>
         </div>

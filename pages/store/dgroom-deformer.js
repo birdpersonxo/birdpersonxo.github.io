@@ -27,7 +27,7 @@ const StoreDgroomDeformer = ()=>{
                         <li>Deform by Guides : Perfect for cases where the skin is not stretching. This mode is very fast and ideal for quick adjustments without compromising quality.</li>
                         <li>Deform by Guides and Skin : Can be used when there is stretching in the underlying skin but also has the ability to hold the clump even during stretching.</li>
 
-                        <li>Deform by Skin : Wrap's your groom to the skin.</li>
+                        <li>Deform by Skin : Wrap&apos;s your groom to the skin.</li>
                     </ul>
                     <b>Included Content :</b>
                     <ul>
