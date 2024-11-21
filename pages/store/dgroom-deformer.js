@@ -2,10 +2,14 @@ import ProductCard from "../../components/elements/Store/ProductCard";
 import Link from "next/link";
 import PurchaseButton from "../../components/elements/Buttons/PurchaseButton";
 import Footer from "../../components/Footer";
+import Head from "next/head";
 
 const StoreDgroomDeformer = ()=>{
     return(
         <>
+        <Head>
+            <title>Deepak Rajan — dGroom Deformer — Store</title>
+        </Head>
         <div className="product-detail-wrapper">
             <div className="product-content">
             <img className="product-banner" src="/images/deformer.webp" alt="dGroom Deformer Banner"/>
