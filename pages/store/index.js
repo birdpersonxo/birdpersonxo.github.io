@@ -21,7 +21,8 @@ const StoreIndex = ()=> {
                 <ProductCard title="Copernicus - LED" 
                     desc="Some random copernicus workfiles." 
                     price="$0"
-                    link="/store/copernicus-led"
+                    link="https://www.dropbox.com/scl/fo/hnewr2p9ppg3fz1663920/ALmhR7BkOqBGsK4n0-VPo-A?rlkey=qpfgmpk55dobhzw8ch3wfqqqh&st=g7xb54ef&dl=0"
+                    src="/images/copernicus_thumb.webp"
                     />
             </div>
         </div>
