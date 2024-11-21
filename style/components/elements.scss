@@ -29,6 +29,20 @@
             font-weight: 600;
             padding-bottom: 10px;
         }
+
+        .studio-customers-wrapper{
+            padding: 2rem 0rem;
+            .studio-customers-logos{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img{
+                    width: 100px;
+                    margin: 0px 1rem;
+                }
+            }
+        }
     }
 }
 .element-paragraph{

@@ -18,6 +18,7 @@ const DGroomDeformer = () => {
                 Features: Guide Generation , Level of detail and Style Blending
                     </Paragraph>
                     <br/>
+                    <StudioCustomers/>
                     <Documentation/>
                 </div>
             </div>
@@ -27,6 +28,24 @@ const DGroomDeformer = () => {
     )
 }
 export default DGroomDeformer;
+
+const StudioCustomers = () => {
+    return (
+        <div className='studio-customers-wrapper'>
+            <div className='studio-customers'>
+                <h1>Studio Customers</h1>
+                <div className='studio-customers-logos'> 
+                    <a href="https://bardel.ca/" target="_blank">
+                        <img src="https://bardel.ca/wp-content/uploads/2022/09/Bardel_logo_Reversed_Green.svg" alt="Bardel Studios"/>
+                    </a>
+                    <a href="https://blackkitestudios.com/" target="_blank">
+                        <img src="/images/blackkit_logo.png" style={{width: '200px'}} alt="Blackkit Studios"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    )
+}
 
 const WorkHeader = () => {
     return (

@@ -21,14 +21,14 @@ const Header = () => {
                     <b>DEEPAK</b> RAJAN 
                 </Link>
                 <div className="menu-wrapper">
-                    <Link href="/" className="menu">
-                        WORKS
+                    <Link href="/store" className="menu">
+                        STORE
                     </Link>
                     <Link href="/art" className="menu">
                         ART
                     </Link>
-                    <Link href="/store" className="menu">
-                        STORE
+                    <Link href="/" className="menu">
+                        WORKS
                     </Link>
                     <Link href="/blog" className="menu">
                         BLOG
