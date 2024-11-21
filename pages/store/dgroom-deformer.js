@@ -9,7 +9,14 @@ const StoreDgroomDeformer = ()=>{
         <div className="product-detail-wrapper">
             <div className="product-content">
             <img className="product-banner" src="/images/deformer.webp" alt="dGroom Deformer Banner"/>
-            <div className="product-title">dGroom Deformer</div>
+            <div className="product-title-wrapper">
+                
+                <div className="product-title">dGroom Deformer 
+                </div>
+                <Link className="product-documentation-link" href="/dgroom-deformer"> 
+                        View Documentation
+                </Link>
+                 </div>
             <div className="product-description-wrapper">
                 <div className="product-description">
                     <p>
@@ -116,8 +123,8 @@ const StoreDgroomDeformer = ()=>{
                     <div className="product-purchase-description">
                         Contains 16 HDA, with Furry and Example File. Along with deformer source code
                     </div>
-                    <PurchaseButton name=" $1600 - dGroom Deformer - Large Studio"
-                    link="https://buy.stripe.com/cN2eWAb8Q0cjeVq8ww"
+                    <PurchaseButton name=" $1300 - dGroom Deformer - Large Studio"
+                    link="https://buy.stripe.com/00g15KccU2kr7sY149"
                     />
                 </div>
                 </div>
