@@ -117,6 +117,7 @@ const StoreDgroomDeformer = ()=>{
 
                     <div className="product-purchase-description">
                         Contains 16 HDA, with Furry and Example File. Along with deformer source code
+                        <br/><br/><i>Small Studio is intended for CFX teams with fewer than 15 members.</i>
                     </div>
                     <PurchaseButton name=" $1000 - dGroom Deformer - Small Studio"
                     link="https://buy.stripe.com/cN2eWAb8Q0cjeVq8ww"
@@ -126,6 +127,7 @@ const StoreDgroomDeformer = ()=>{
 
                     <div className="product-purchase-description">
                         Contains 16 HDA, with Furry and Example File. Along with deformer source code
+                        <br/><br/><i>Large Studio is intended for CFX teams with more than 15 members.</i>
                     </div>
                     <PurchaseButton name=" $1300 - dGroom Deformer - Large Studio"
                     link="https://buy.stripe.com/00g15KccU2kr7sY149"
