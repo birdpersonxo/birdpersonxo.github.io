@@ -8,8 +8,17 @@
     text-transform: uppercase;
     letter-spacing: -3px;
     padding-bottom: 20px;
+    display: flex;
     b{
         font-weight: 600;
+    }
+
+    .download-resume{
+        padding-left: 20px;
+        font-size: 18px;
+        color: $red;
+        letter-spacing: 0.02px;
+        // font-size: 12px;
     }
 }
 

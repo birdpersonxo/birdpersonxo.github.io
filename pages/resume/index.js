@@ -19,6 +19,9 @@ const Resume = () => {
             </div>
             <div className="name">
                 <b>Deepak</b> Rajan
+                {/* <div className='download-resume'>
+                    <Link href="/resume/pdf">Download PDF</Link>
+                </div> */}
             </div>
             <div className="about">
                 Hello!
