@@ -19,7 +19,7 @@ const DGroomDeformer = () => {
                     </Paragraph>
                     <br/>
                     <StudioCustomers/>
-                    <Documentation/>
+                    {/* <Documentation/> */}
                 </div>
             </div>
         </div>
@@ -35,11 +35,17 @@ const StudioCustomers = () => {
             <div className='studio-customers'>
                 <h1>Studio Customers</h1>
                 <div className='studio-customers-logos'> 
+                    <a href="https://cinesite.com/" target="_blank">
+                        <img src="/images/cinesite.png" style={{width: '200px'}} alt="Cinesite"/>
+                    </a>
                     <a href="https://bardel.ca/" target="_blank">
                         <img src="https://bardel.ca/wp-content/uploads/2022/09/Bardel_logo_Reversed_Green.svg" alt="Bardel Studios"/>
                     </a>
                     <a href="https://blackkitestudios.com/" target="_blank">
                         <img src="/images/blackkit_logo.png" style={{width: '200px'}} alt="Blackkit Studios"/>
+                    </a>
+                    <a href="https://www.barnstormvfx.com/" target="_blank">
+                        <img src="/images/barnstorm.png" style={{width: '200px'}} alt="Barnstorm"/>
                     </a>
                 </div>
             </div>
